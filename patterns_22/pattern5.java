@@ -1,9 +1,9 @@
 package patterns_22;
 
-public class pattern1 {
+public class pattern5 {
     public void solution(int n){
         for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
+            for(int j=n;j>i;j--){
                 System.out.print("* ");
             }
             System.out.print("\n");
@@ -11,16 +11,16 @@ public class pattern1 {
     }
 
     public static void main(String[] args) {
-        new pattern1().solution(5);
+        new pattern5().solution(5);
     }
 }
 
 // For compiling : javac patterns_22.pattern1.java
 // for running : java patterns_22.pattern1
 
-/*  Complexity Analysis
+/* Complexity Analysis
 
-Time Complexity: O(N²), since we print N stars for each of the N rows.
+Time Complexity: O(N²), since two nested loops are used.
 
-Space Complexity: O(1), no additional space is used apart from loop variables.
+Space Complexity: O(1), as no extra data structures are needed. 
  */
