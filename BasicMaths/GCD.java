@@ -22,7 +22,7 @@ public class GCD {
         }
     }
 
-    public void EquilateralAlgo(int num1,int num2){
+    public int EquilateralAlgo(int num1,int num2){
 
         // TC = O9=(log fi(min(num1,num2)))
 
@@ -30,8 +30,8 @@ public class GCD {
             if(num1>num2) num1 = num1 % num2;
             else num2 = num2 % num1;
         }
-        if(num1 == 0) System.out.println("GCD = " +num2);
-        else System.out.println("GCD = " + num1);
+        if(num1 == 0) return num2;
+        else return num1;
     }
 
     public void main (String arrgs[]){
@@ -43,7 +43,8 @@ public class GCD {
 
         new GCD().BruteSolution(num1,num2);
         new GCD().Solution2(num1,num2);
-        new GCD().EquilateralAlgo(num1,num2);
+       int n =  new GCD().EquilateralAlgo(num1,num2);
+       System.out.println("LCM is " + (num1*num2)/n);
 
         sc.close();
     }
