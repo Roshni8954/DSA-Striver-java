@@ -31,6 +31,7 @@ public class insertion {
         insertionSort(arr);
 
         for(int val:arr)
-            System.out.println(val + " ");
+            System.out.print(val + " ");
+        System.out.println();
     }
 }
