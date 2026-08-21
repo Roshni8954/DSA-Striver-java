@@ -65,6 +65,7 @@ public class MergeSort {
 
         mergeSort(arr,0,arr.length - 1);
 
+        System.out.println("Sorted array:");
         for(int val:arr)
             System.out.print(val + " ");
         System.out.println();

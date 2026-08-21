@@ -35,3 +35,17 @@ public class insertion {
         System.out.println();
     }
 }
+
+/* Case	Time	Space	When it happens
+Best	O(n)	O(1)	Array is already sorted — each element just compared once, no shifts
+Average	O(n²)	O(1)	Random order — on average n²/4 comparisons and shifts
+Worst	O(n²)	O(1)	Array is reverse sorted — every element shifts all the way to position 0
+Stable?	Yes ✓	Equal elements keep their original relative order
+In-place?
+
+Yes — O(1) auxiliary space
+
+Best use case
+
+Small or nearly-sorted arrays 
+*/
